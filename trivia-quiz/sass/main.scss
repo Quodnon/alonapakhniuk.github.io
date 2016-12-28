@@ -1,0 +1,149 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background: #f3f3f3;
+	color: #424242;
+}
+.header {
+	background: #efb6f5;
+	width: 100%;
+	&__content {
+		max-width: 1080px;
+		width: 100%;
+		margin: 0px auto;
+		padding: 10px 0px;
+		img {
+			width: 150px;
+		}
+	}
+}
+.container {
+	&__content {
+		max-width: 1080px;
+		width: 100%;
+		margin: 0px auto;
+	}
+}
+.content{
+	&__total-info {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__counter {
+		text-transform: uppercase;
+		span {
+			font-size: 18px;
+			font-weight: 400;
+			padding: 0px 3px;
+			color: #362b79;
+		}
+	}
+	&__quiz-field {
+		max-width: 800px;
+		width: 100%;
+		margin: 0px auto;
+	}
+	&__question-id {
+		font-size: 28px;
+		font-weight: 200;
+		text-align: center;
+	}
+	&__category {
+		font-size: 22px;
+		font-weight: 200;
+		text-align: center;
+	}
+	&__question {
+		width: 100%;
+		padding: 10px;
+		background: #424242;
+		color: #f3f3f3;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-weight: 200;
+	}
+	&__btn {
+		background: #cdcdcd;
+		color: #424242;
+		box-shadow: 1px 1px 6px #cdcdcd;
+		margin-bottom: 20px;
+		&:hover {
+			background: #fff;
+			box-shadow: none;
+		}
+	}
+	&__answer-block {
+		border: 1px solid #cdcdcd;
+		width: 100%;
+		height: 300px;
+		border-radius: 4px;
+	}
+	&__message {
+		width: 100%;
+		padding: 10px;
+		border-radius: 4px;
+		text-align: center;
+		box-sizing: border-box;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	&__next-btn {
+		background: #346925;
+		color: #fff;
+		box-shadow: 1px 1px 6px #cdcdcd;
+		margin: 20px 0px 40px;
+		&:hover {
+			background: #255018;
+			box-shadow: none;
+		}
+	}
+}
+.success-message {
+	border: 1px solid #346925;
+	color: #346925;
+	background: rgba(131, 232, 102, 0.3);
+}
+.error-message {
+	border: 1px solid #692531;
+	color: #692531;
+	background: rgba(224, 132, 148, 0.43);
+}
+.btn {
+	width: 100%;
+	height: 36px;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	font-weight: 700;
+	&:focus {
+		outline: none;
+	}
+}
+.letters-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	button {
+		width: 100%;
+		height: 36px;
+		border: 1px solid #cdcdcd;
+		border-radius: 4px;
+		font-weight: 700;
+		width: 36px;
+		margin: 20px 5px;
+		&:focus {
+			outline: none;
+		}
+		&:hover {
+			opacity: .5;
+		}
+	}
+}
+.hide-btn {
+	display: none;
+}
+.error-message, .success-message, .content__next-btn {
+	display: none;
+}

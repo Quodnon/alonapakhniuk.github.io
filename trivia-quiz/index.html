@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<!-- header -->
+	<div class="header">
+		<div class="header__content">
+			<a href="#"><img src="img/logo.png"></a>
+		</div>
+	</div>
+
+	<!-- content -->
+	<section class="container">
+		<div class="container__content content">
+			<div class="content__total-info total-info">
+				<p class="content__counter">Correct Answer:<span id="correct-answer">0</span></p>
+				<p class="content__counter">Total Questions:<span id="total-answer">0</span></p>
+			</div>
+			<div class="content__quiz-field">
+				<p class="content__question-id">Question <span id="question-id">#217831</span></p>
+				<p class="content__category">Category: <span id="category">energy</span></p>
+				<p class="content__question" id="question">Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLoremLorem ipsum</p>
+				<p class="content__message success-message" id="success-message">Correct</p>
+				<p class="content__message error-message" id="error-message">Incorrect</p>
+				<button class="content__btn btn" id="skip-btn">Skip Question</button>
+				<div class="content__answer-block letters-box" id="result-letters">
+					<!-- <button class="letters-box__item btn js-result">A</button> -->
+				</div>
+				<div class="content__random-letters letters-box" id="letters-box">
+					<!-- <button class="letters-box__item btn js-answer hide-btn">A</button> -->
+				</div>
+				<button class="content__next-btn btn" id="next-btn">Next Question</button>
+			</div>
+		</div>
+	</section>
+	
+	<script src="js/common.js"></script>
+
+</body>
+</html>
