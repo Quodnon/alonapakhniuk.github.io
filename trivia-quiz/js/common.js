@@ -99,7 +99,7 @@ xhr.onreadystatechange = function () {
 				errorMessage.style.display = "none";
 				nextBtn.style.display = "none";
 
-				xhr.open('GET', 'http://jservice.io/api/random', true);
+				xhr.open('GET', 'https://jservice.io/api/random', true);
 				xhr.send();
 			}
 		};
@@ -125,7 +125,7 @@ skipBtn.onclick = function(){
 	errorMessage.style.display = "none";
 	nextBtn.style.display = "none";
 
-	xhr.open('GET', 'http://jservice.io/api/random', true);
+	xhr.open('GET', 'https://jservice.io/api/random', true);
 	xhr.send();
 	alert(totalFunctionsCreated);
 };
