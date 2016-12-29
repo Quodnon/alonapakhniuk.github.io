@@ -106,7 +106,7 @@ xhr.onreadystatechange = function () {
     }
 };
 
-xhr.open('GET', 'http://jservice.io/api/random', true);
+xhr.open('GET', 'https://jservice.io/api/random', true);
 
 xhr.onerror = function() {
   	console.log( 'Error ' + this.status );
