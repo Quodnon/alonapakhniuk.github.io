@@ -41,7 +41,7 @@ var errorMessage = document.getElementById('error-message');
 var resultAnswerArray = [];
 var counterTrueAnswer = 0;
 var counterAllAnswer = 0;
-
+var totalFunctionsCreated =0;
 
 
 var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
@@ -65,6 +65,7 @@ xhr.onreadystatechange = function () {
 		});
 		
 		resultAnswerArray = [];
+	    	totalFunctionsCreated++;
 		answer.onclick = function(){
 			var target = event.target;
 			ClickButtonAdd(target);
@@ -76,6 +77,7 @@ xhr.onreadystatechange = function () {
 			}
 		};
 
+	    	totalFunctionsCreated++;
 		result.onclick = function(){
 			var target = event.target;
 			ClickButtonRemove(target);
@@ -85,7 +87,7 @@ xhr.onreadystatechange = function () {
 				errorMessage.style.display = 'none';
 			}
 		};
-
+		totalFunctionsCreated++
 		nextBtn.onclick = function(){
 			if ( resultAnswerArray.join('') === arrayObj[0].answer ) {
 				counterTrueAnswer++;
@@ -125,6 +127,7 @@ skipBtn.onclick = function(){
 
 	xhr.open('GET', 'http://jservice.io/api/random', true);
 	xhr.send();
+	alert(totalFunctionsCreated);
 };
 
 
