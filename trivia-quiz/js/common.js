@@ -99,14 +99,14 @@ xhr.onreadystatechange = function () {
 				errorMessage.style.display = "none";
 				nextBtn.style.display = "none";
 
-				xhr.open('GET', 'http://jservice.io/api/random', true);
+				xhr.open('GET', 'https://jservice.io/api/random', true);
 				xhr.send();
 			}
 		};
     }
 };
 
-xhr.open('GET', 'http://jservice.io/api/random', true);
+xhr.open('GET', 'https://jservice.io/api/random', true);
 
 xhr.onerror = function() {
   	console.log( 'Error ' + this.status );
@@ -125,7 +125,7 @@ skipBtn.onclick = function(){
 	errorMessage.style.display = "none";
 	nextBtn.style.display = "none";
 
-	xhr.open('GET', 'http://jservice.io/api/random', true);
+	xhr.open('GET', 'https://jservice.io/api/random', true);
 	xhr.send();
 	alert(totalFunctionsCreated);
 };
